@@ -6,8 +6,8 @@
 
 import math
 delta_raiz = 0
-r1 = 0
-r2 = 0
+R1 = 0
+R2 = 0
 lista_1 = str(input())
 lista_2 = lista_1.split()
 a = float(lista_2[0])
@@ -15,10 +15,26 @@ b = float(lista_2[1])
 c = float(lista_2[2])
 delta = (b**2) - 4 * a * c
 if delta < 0 or a == 0:
-    print('Impossível calcular')
+    print('Impossivel calcular')
 else:
     delta_raiz = math.sqrt(delta)
-    r1 = (b - delta_raiz) / (2 * a)
-    r2 = (b + delta_raiz) / (2 * a)
-    print('R1 = {:.5f}'.format(r1))
-    print('R2 = {:.5f}'.format(r2))
+    R1 = (-b + delta_raiz) / (2 * a)
+    R2 = (-b - delta_raiz) / (2 * a)
+    print('R1 = {:.5f}'.format(R1))
+    print('R2 = {:.5f}'.format(R2))
+
+# CÓDIGO ACEITO UHU!!!
+
+# Outra maneira de resolver usando while:
+
+'''num = int(input())
+lista = [0,0,0]
+lista[0] = num
+pos = 2
+while pos == 2:
+    num = int(input())
+    lista[1] = num
+    pos += 1
+num = int(input())
+lista[2] = num
+print(lista)''' # depois daqui viria o mesmo que na linha 13 até a 24 com as respectivas variáveis.
