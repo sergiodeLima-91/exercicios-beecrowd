@@ -29,9 +29,13 @@ elif x > 0 and y < 0:
 
 # Caso as coordenadas mostrem que um dos pontos está sobre um dos eixos:
 
-if x == 0 and y > 0 or y < 0:
+if x == 0 and y > 0:
     print('Eixo X')
-elif y == 0 and x > 0 or x < 0:
+elif x == 0 and y < 0:
+    print('Eixo X')
+elif y == 0 and x > 0:
+    print('Eixo Y')
+elif y == 0 and x < 0:
     print('Eixo Y')
 elif x == 0 and y == 0:
     print('Origem')
