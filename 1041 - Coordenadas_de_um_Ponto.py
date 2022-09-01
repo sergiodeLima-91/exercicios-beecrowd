@@ -4,10 +4,34 @@
 
 # Criando duas variáveis de entrada para ler os dois valores.
 
-v1 = float(input())
-v2 = float(input())
+lista1 = str(input())
+lista2 = lista1.split()
+x = float(lista2[0])
+y = float(lista2[1])
 
-# Como representar os quadrantes dos eixos x e y? Ambos são compostos por números de natureza positiva e negativa. Então basta colocá-los nesta ordem em cada eixod dentro de uma variável.
+# Como representar os quadrantes dos eixos x e y? Ambos são compostos por números de natureza positiva e negativa. Então basta colocá-los nesta ordem em cada eixo dentro de uma variável. Necessário entender o seguinte, seguindo um raciocínio lógico:
 
-x = []
-y = []
+# Quadrante 1: X - POSITIVO e Y - POSITIVO
+# Quadrante 2: X - NEGATIVO e Y - POSITIVO
+# Quadrante 3: X - NEGATIVO e Y - NEGATIVO
+# Quadrante 4: X - POSITIVO e Y - NEGATIVO
+
+# Portanto, para determinar em qual quadrante as coordenadas estarão:
+
+if x > 0 and y > 0:
+    print('Q1')
+elif x < 0 and y > 0:
+    print('Q2')
+elif x < 0 and y < 0:
+    print('Q3')
+elif x > 0 and y < 0:
+    print('Q4')
+
+# Caso as coordenadas mostrem que um dos pontos está sobre um dos eixos:
+
+if x == 0 and y > 0 or y < 0:
+    print('Eixo X')
+elif y == 0 and x > 0 or x < 0:
+    print('Eixo Y')
+elif x == 0 and y == 0:
+    print('Origem')
