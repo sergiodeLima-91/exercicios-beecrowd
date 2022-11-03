@@ -89,3 +89,29 @@ if 5.0 <= m <= 6.9:
     print('Nota do exame: {}'.format(y))'''
 
 # Tudo foi resolvido e o código foi aprovado pelo beecrowd. Vivendo e aprendendo.
+
+# VERSÃO FINAL APROVADA PELO SITE:
+
+n1, n2, n3, n4 = input().split()
+n1 = float(n1)
+n2 = float(n2)
+n3 = float(n3)
+n4 = float(n4)
+media = ((n1 * 2) + (n2 * 3) + (n3 * 4) + (n4 * 1)) / (1 + 2 + 3 + 4)
+print(f'Media: {media:.1f}')
+if media >= 7:
+    print('Aluno aprovado.')
+if media < 5:
+    print('Aluno reprovado.')
+if media >= 5 and media <= 6.9:
+    print('Aluno em exame.')
+    exame = float(input())
+    print(f'Nota do exame: {exame}')
+    if (media + exame) / 2 >= 5:
+        mf = (media + exame) / 2
+        print('Aluno aprovado.')
+        print(f'Media final: {mf:.1f}')
+    else:
+        mf = (media + exame) / 2
+        print('Aluno reprovado.')
+        print(f'Media final: {mf:.1f}')
