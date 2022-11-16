@@ -5,7 +5,8 @@ A = float(A)
 B = float(B)
 C = float(C)
 
-# Praticamente a totalidade deste código foi retirado de: http://muitomaiscodigoss.blogspot.com/2018/09/uri-problema-1045-tipos-de-triangulos.html
+# Praticamente a totalidade deste código foi retirado de:
+# http://muitomaiscodigoss.blogspot.com/2018/09/uri-problema-1045-tipos-de-triangulos.html
 
 
 # PASSO 2 - VERIFICAR QUAL DAS ENTRADAS É A MAIOR:
